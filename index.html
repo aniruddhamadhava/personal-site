@@ -78,7 +78,7 @@
             <p>
               	I am conducting research gravitational lensing research under Dr. Charles Keeton in the Department of Physics and Astronomy. 
               In recent decades, gravitational lensing by galaxy clusters has become a powerful astrophysical tool. Due to their immense mass, 
-              galaxy clusters form ``cosmic telescopes,'' magnifying distant primordial galaxies [1]. These observations
+              galaxy clusters form "cosmic telescopes," magnifying distant primordial galaxies [1]. These observations
               provide an opportunity to study the early universe. For instance, Furtak et al. [2] analyze the low-mass
               end of the stellar mass function - the number density of galaxies binned by stellar mass - 
               for high-redshift lensed galaxies. This function allows us to compare properties of the oldest galaxies with younger ones and constrain 
@@ -87,20 +87,34 @@
               	Before astronomers can use the observations, they must reconstruct the intrinsic sources by accounting for the distortions and magnifications 
               induced by gravitational lensing. This step requires models of the cluster mass distribution, which involve numerous assumptions and parameters,
               each adding systematic errors. Therefore, we need to figure out the contribution of each parameter to the errors [3].
-              One parameter of concern is the density fluctuation in cosmological large-scale structures (LSS). The LSS is the ``cosmic web'' connecting galaxy 
+              One parameter of concern is the density fluctuation in cosmological large-scale structures (LSS). The LSS is the "cosmic web" connecting galaxy 
               clusters. Incorporating the fluctuations due to LSS may produce non-uniform variations in the deflection of light rays that contribute 
               the most error. While previous work estimated the scale of LSS effects, the estimates are not detailed enough to be used for lens modeling 
               [4,5]. Therefore, I used ray-tracing methods in conjunction with cosmological simulations 
               to quantify LSS effects on lens models.
               <h4>Results</h4>
               Here are a few of my results: 
+              <img src = "https://github.com/aniruddhamadhava/personal-site/blob/gh-pages/A2744_defstats_fitshear%20(1).png?raw=true">
+              <b>Figure 1:</b> Deflection statistics for the Abell 2744 images. Average standard deviation in differential deflections due to LSS ($\sim 10$") is large relative
+              to typical cluster lensing deflections ($\sim 10^{0}$"). This suggests that LSS effects are not negligible in lens models.
+              <img src = "https://github.com/aniruddhamadhava/personal-site/blob/gh-pages/M0416_defstats_fitshear%20(1).png?raw=true">
+              <b>Figure 2:</b> Same plot as in Figure 1, but with MACS 0416 images. We draw the same conclusions as in Figure 1. 
+
+              <p>
+                Since my analysis suggests that we cannot neglect LSS deflection, I will continue this project by incorporating these results into cluster lens models. 
+                Raney et al. [6] present a framework to analyze systematic errors using Gaussian priors. I will use this framework in conjunction to incorporate my 
+                results for LSS deflection into cluster lens models. Since the RMS values are more than an order of magnitude larger than current model residuals, 
+                we anticipate that the models will change, and I will examine how much including LSS deflections affects predictions for lensing magnifications that 
+                are used to draw conclusions about early galaxies.
+              </p>
               <h4>References</h4>
               <ol type = "1">
                 <li>Kikuchihara, S., Ouchi, M., Ono, Y., et al. 2020, ApJ, 893, 60, <a href="https://ui.adsabs.harvard.edu/link_gateway/2020ApJ...893...60K/doi:10.3847/1538-4357/ab7dbe">DOI:10.3847/1538-4357/ab7dbe</a>.</li>
                 <li>Furtak, L. J., Atek, H., Lehnert, M. D., Chevallard, J., & Charlot, S. 2020, MNRAS, 501, 1568, <a href ="https://ui.adsabs.harvard.edu/link_gateway/2021MNRAS.501.1568F/doi:10.1093/mnras/staa3760">DOI:10.1093/mnras/staa3760</a></li>
-                <li>Raney, C. A., Keeton, C. R., Brennan, S., & Fan, H. 2020, MNRAS, 494, 4771,<a href = "https://ui.adsabs.harvard.edu/link_gateway/2020MNRAS.494.4771R/doi:10.1093/mnras/staa921">DOI:10.1093/mnras/staa921</a></li>
+                <li>Raney, C. A., Keeton, C. R., Brennan, S., & Fan, H. 2020, MNRAS, 494, 4771, <a href = "https://ui.adsabs.harvard.edu/link_gateway/2020MNRAS.494.4771R/doi:10.1093/mnras/staa921">DOI:10.1093/mnras/staa921</a></li>
                 <li>Bar-Kana, R., 1996, ApJ, 468, 17, <a href = "https://ui.adsabs.harvard.edu/link_gateway/1996ApJ...468...17B/doi:10.1086/177666">DOI:10.1086/177666</a></li>
                 <li>Host, O. 2012, MNRAS, 420, L18, <a href = "https://ui.adsabs.harvard.edu/abs/2012MNRAS.420L..18H">DOI:10.1111/j.1745-3933.2011.01184.x</a></li>
+                <li>Raney, C. A., Keeton, C. R., & Zimmerman D. T. 2021, MNRAS, 508, 5587, <a href = "https://ui.adsabs.harvard.edu/abs/2021MNRAS.508.5587R/abstract">DOI:10.1093/mnras/stab2857</a></li>
               </ol>
             </p>
           </div>
