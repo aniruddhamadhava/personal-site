@@ -7,8 +7,7 @@
     <meta name="About Me" content="Junior majoring in astrophysics and mathematics at Rutgers University - New Brunswick, NJ.">
     <meta name="author" content="Information about the author here">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
-    <meta name="google-site-verification" content="StQiE_q0dDqDoWjtjG5gzsz2begKU_ZYg3zp8H4QlEc" />
-    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon.png">
   
     <!-- Stylesheets -->
     <!-- Reset default styles and add support for google fonts -->
@@ -36,6 +35,8 @@
     margin-left: 4em;
 }
 </style>
+
+
     <!-- Want to add Bootstrap? -->
     <!-- Visit: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
     
@@ -43,21 +44,16 @@
   
   <body>
 
-    <div class = "menu">
-      <div class = "navbar">
-        <a href="#home">Home</a>
-         <div class="subnav">
-        <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
-        <div class="subnav-content">
-          <a href="#gl">Gravitational Lensing</a>
-          <a href="#mQFT">Mathematical QFT</a>
-          <a href="#bh">Black Holes</a>
-        </div>
-      </div>
-        <a href="#Links">Links/Publications</a>
-        <a href="#contact">Contact</a>
-      </div>
-      </div>
+    <header id="header">
+      <h1>Aniruddha Madhava</h1>
+      
+      <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
+      <ul class="main-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#Links">Links/Publications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>                 
     </header>
    
     <div id="container">
@@ -78,9 +74,6 @@
               Mathematics Association (RUMA), and the Rutgers Astronomical Society (RAS). Sometimes, I participate in the Rutgers Graduate-Undergraduate Mathematical Physics Seminar.
             </p>
             <h2>Research/Research Interests</h2>
-            <div id = "Gravitational Lensing" class = "content-region hide">
-              <p>Test subpage</p>
-            </div>
             <h3>Gravitational Lensing</h3>
             <p>
               <span style="margin-left:2em">I</span> am conducting research gravitational lensing research under Dr. Charles Keeton in the Department of Physics and Astronomy. 
@@ -99,9 +92,7 @@
               the most error. While previous work estimated the scale of LSS effects, the estimates are not detailed enough to be used for lens modeling 
               [4,5]. Therefore, I used ray-tracing methods in conjunction with cosmological simulations 
               to quantify LSS effects on lens models.
-            </p>
               <h4>Results</h4>
-              <p class = "text"><span class="dots">...</span> <span class="moreText">
               Here are a few of my results: 
               <br>
               <img src = "https://github.com/aniruddhamadhava/personal-site/blob/gh-pages/A2744_defstats_fitshear%20(1).png?raw=true", width = 700>
@@ -123,16 +114,14 @@
               </p>
               <h4>References</h4>
               <ol type = "1">
-                <li>Kikuchihara, S., Ouchi, M., Ono, Y., et al. 2020, ApJ, 893, 60, <a href="https://ui.adsabs.harvard.edu/link_gateway/2020ApJ...893...60K/doi:10.3847/1538-4357/ab7dbe", target = "_blank">DOI:10.3847/1538-4357/ab7dbe</a>.</li>
-                <li>Furtak, L. J., Atek, H., Lehnert, M. D., Chevallard, J., & Charlot, S. 2020, MNRAS, 501, 1568, <a href ="https://ui.adsabs.harvard.edu/link_gateway/2021MNRAS.501.1568F/doi:10.1093/mnras/staa3760", target = "_blank">DOI:10.1093/mnras/staa3760</a></li>
-                <li>Raney, C. A., Keeton, C. R., Brennan, S., & Fan, H. 2020, MNRAS, 494, 4771, <a href = "https://ui.adsabs.harvard.edu/link_gateway/2020MNRAS.494.4771R/doi:10.1093/mnras/staa921", target = "_blank">DOI:10.1093/mnras/staa921</a></li>
-                <li>Bar-Kana, R., 1996, ApJ, 468, 17, <a href = "https://ui.adsabs.harvard.edu/link_gateway/1996ApJ...468...17B/doi:10.1086/177666", target = "_blank">DOI:10.1086/177666</a></li>
-                <li>Host, O. 2012, MNRAS, 420, L18, <a href = "https://ui.adsabs.harvard.edu/abs/2012MNRAS.420L..18H", target = "_blank">DOI:10.1111/j.1745-3933.2011.01184.x</a></li>
-                <li>Raney, C. A., Keeton, C. R., & Zimmerman D. T. 2021, MNRAS, 508, 5587, <a href = "https://ui.adsabs.harvard.edu/abs/2021MNRAS.508.5587R/abstract", target = "_blank">DOI:10.1093/mnras/stab2857</a></li>
+                <li>Kikuchihara, S., Ouchi, M., Ono, Y., et al. 2020, ApJ, 893, 60, <a href="https://ui.adsabs.harvard.edu/link_gateway/2020ApJ...893...60K/doi:10.3847/1538-4357/ab7dbe">DOI:10.3847/1538-4357/ab7dbe</a>.</li>
+                <li>Furtak, L. J., Atek, H., Lehnert, M. D., Chevallard, J., & Charlot, S. 2020, MNRAS, 501, 1568, <a href ="https://ui.adsabs.harvard.edu/link_gateway/2021MNRAS.501.1568F/doi:10.1093/mnras/staa3760">DOI:10.1093/mnras/staa3760</a></li>
+                <li>Raney, C. A., Keeton, C. R., Brennan, S., & Fan, H. 2020, MNRAS, 494, 4771, <a href = "https://ui.adsabs.harvard.edu/link_gateway/2020MNRAS.494.4771R/doi:10.1093/mnras/staa921">DOI:10.1093/mnras/staa921</a></li>
+                <li>Bar-Kana, R., 1996, ApJ, 468, 17, <a href = "https://ui.adsabs.harvard.edu/link_gateway/1996ApJ...468...17B/doi:10.1086/177666">DOI:10.1086/177666</a></li>
+                <li>Host, O. 2012, MNRAS, 420, L18, <a href = "https://ui.adsabs.harvard.edu/abs/2012MNRAS.420L..18H">DOI:10.1111/j.1745-3933.2011.01184.x</a></li>
+                <li>Raney, C. A., Keeton, C. R., & Zimmerman D. T. 2021, MNRAS, 508, 5587, <a href = "https://ui.adsabs.harvard.edu/abs/2021MNRAS.508.5587R/abstract">DOI:10.1093/mnras/stab2857</a></li>
               </ol>
-              </span></p>
-              <button class="read-more-btn">Read More</button>
-              <script src="script.js"></script>
+            </p>
           </div>
 
           <div id="Links" class="content-region hide">
@@ -140,16 +129,16 @@
             <h3>Links:</h3>
             <p> </p>
             <ol type = "1">
-              <li><a href = "https://github.com/aniruddhamadhava/RU-Gravitational-Lensing", target = "_blank">RU Lensing Repository</a></li>
-              <li><a href = "https://github.com/aniruddhamadhava/Mathematical_QFT", target = "_blank">Mathematical Quantum Field Theory Repository <b>(Content coming soon...)</b></a></li>
-              <li><a href = "https://www.overleaf.com/read/qcwdxgsgmncs#e3a53c", target = "_blank">In-Depth Summary of Gravitational Lensing Project.</a></li>
+              <li><a href = "https://github.com/aniruddhamadhava/RU-Gravitational-Lensing">RU Lensing Repository</a></li>
+              <li><a href = "https://github.com/aniruddhamadhava/Mathematical_QFT">Mathematical Quantum Field Theory Repository <b>(Content coming soon...)</b></a></li>
+              <li><a href = "https://www.overleaf.com/read/qcwdxgsgmncs#e3a53c">In-Depth Summary of Gravitational Lensing Project.</a></li>
             </ol>
             <h3>Publications/Posters:</h3>
             <ol type = "1">
               <li><b>A. Madhava</b>, C. Keeton, D. Ruan, "Quantifying Systematic Errors in Cluster Lens Models due to Cosmological Large-Scale Structures”, 2024 <b>(Research Paper In Progress)</b></li>
-              <li><a href = "https://docs.google.com/presentation/d/1NHAfd3nZUoQ97e4R-stvadA-mqmwnKOoLJYqaaKj4zk/edit?usp=sharing", target = "_blank">Quantifying Systematic Errors in Cluster Lens Models due to Cosmological Large-Scale Structures</a></li>: Slide presentation at the Fall Research Symposium organized by the Rutgers Society of Physics Students (November 29, 2023)
-              <li><a href ="https://github.com/aniruddhamadhava/RU-Gravitational-Lensing/blob/main/madhava_aniruddha_arestyposter%20(1).pdf", target = "_blank">Computing Lensing Deflection Angle Maps for Simulated Large-Scale Structures</a></li>: Poster presentation at the annual Aresty Summer Science Research Symposium (August 4, 2022)
-              <li><a href = "https://drive.google.com/file/d/1zo25sAurxqt9OHcTX5vNoph83DZoZjF5/view?usp=sharing", target = "_blank"><b>A. Madhava</b>, Noether's Theorem, Hamiltonian Mechanics, and Homological Algebra, 2023</a></li>: Final paper for mathematical QFT research.
+              <li><a href = "https://docs.google.com/presentation/d/1NHAfd3nZUoQ97e4R-stvadA-mqmwnKOoLJYqaaKj4zk/edit?usp=sharing">Quantifying Systematic Errors in Cluster Lens Models due to Cosmological Large-Scale Structures</a></li>: Slide presentation at the Fall Research Symposium organized by the Rutgers Society of Physics Students (November 29, 2023)
+              <li><a href ="https://github.com/aniruddhamadhava/RU-Gravitational-Lensing/blob/main/madhava_aniruddha_arestyposter%20(1).pdf">Computing Lensing Deflection Angle Maps for Simulated Large-Scale Structures</a></li>: Poster presentation at the annual Aresty Summer Science Research Symposium (August 4, 2022)
+              <li><a href = "https://drive.google.com/file/d/1zo25sAurxqt9OHcTX5vNoph83DZoZjF5/view?usp=sharing"><b>A. Madhava</b>, Noether's Theorem, Hamiltonian Mechanics, and Homological Algebra, 2023</a></li>: Final paper for mathematical QFT research.
             </ol>
           </div>
           
