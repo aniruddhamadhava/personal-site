@@ -43,19 +43,21 @@
   
   <body>
 
-    <header id="header">
-      <h1>Aniruddha Madhava</h1>
-      
-      <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
-      <ul class="menu-list">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-          <ul class = "sub-menu">
-            <li><a href = "#Gravitational Lensing">Gravitational Lensing</a></li>
-          </ul>
-        <li><a href="#Links">Links/Publications</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>                 
+    <div class = "menu">
+      <div class = "navbar">
+        <a href="#home">Home</a>
+         <div class="subnav">
+        <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+          <a href="#gl">Gravitational Lensing</a>
+          <a href="#mQFT">Mathematical QFT</a>
+          <a href="#bh">Black Holes</a>
+        </div>
+      </div>
+        <a href="#Links">Links/Publications</a>
+        <a href="#contact">Contact</a>
+      </div>
+      </div>
     </header>
    
     <div id="container">
