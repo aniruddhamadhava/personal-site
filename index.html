@@ -145,10 +145,16 @@ of homological algebra/category theory, functional analysis, PDE, and geometry.<
             Tripos notes on general relativity, and Robert Wald's <em>General Relativity</em>. I expanded on my knowledge of manifolds and tensors from my QFT reading course. For instance, I learned about <em>charts</em>
             (i.e., smooth bijections mapping open regions on a manifold onto open subsets of $\mathbb{R}^{n}$). It is crucial to generalize to manifolds since it is possible that spacetime does not harbor the global properties
             of Euclidean Space. For instance, Wald provides the classic example of the surface of the Earth. Locally, the surface appears to be identical to $\mathbb{R}^{2}$ (i.e., a flat Earth). Globally, the surface does not
-            retain the properties of this space. Hence, by generalizing to manifolds, we allow for our spacetime to be Euclidean on local scales without assuming its global properties. 
-            <br>
-              <span style = "margin-left:2em">I</span> also learned about contravariant and covariant vectors. 
-            </p>
+            retain the properties of this space. Hence, by generalizing to manifolds, we allow for our spacetime to be Euclidean on local scales without assuming its global properties. Additionally, I covered tangent spaces
+            at a point $p$ on a manifold $M$ denoted by $T_{p}(M)$ and tangent vectors. The <b>tangent vector</b> at a point $p$ on a smooth curve $\lambda(t)$ on a manifold is defined as the linear map from the space of all
+            smooth functions on $M$ to $\mathbb{R}$. Mathematically, 
+                $$X_{p}(f) = \left\{\frac{d}{dt}\left[(f\circ \lambda)(t)\right]\right\}_{t = 0}.$$
+            Expressing the tangent vector using charts, 
+                $$X_{p}(f) = \left(\frac{\partial F(x)}{\partial x^{\mu}}\right)_{\phi(p)}\left(\frac{dx^{\mu}(\lambda(t))}{dt}\right)_{t = 0}$$
+            Using this, we showed that the set of all tangent vectors at point $p$ forms an $n$-dimensional vector space, denoted $T_{p}(M)$. We worked out the relationship between two disinct bases, which led to the notion of 
+            a <b>contravariant vector</b>. Mathematically, this vector is defined as a set of numbers (i.e., components) $\{X^{\mu}\}$ that transform in the way, 
+                $$X'^{\mu} = X^{\mu}\left(\frac{dx'^{\mu}}{dx^{\mu}}\right)_{\phi(p)},$$
+            where the primed and unprimed notations distinguish our bases. 
           </div>
 
           <div id="Links" class="content-region hide">
