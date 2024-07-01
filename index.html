@@ -149,9 +149,10 @@
             The original work by Oppenheimer and Synder showed that the line density will contract to a black hole. Follow-up work by Sikkema and Mann showed that the matter density could either form a black hole or
             a singularity, depending on the initial mass density (see Figure 1). 
             <br>
-            <img src = "https://github.com/aniruddhamadhava/personal-site/blob/gh-pages/blackhole_sing%20(1).pdf", width = 700>
+            <img src = "blackhole_sing (1).pdf", width = 700>
             <br>
-            <b><font color = "#EF6D3D?">Figure 1:</font>Conditions for forming black holes vs. naked singularities. Notice that in the green region (density exceeds critical value), the time to form a singularity (blue curve) exceeds the time it takes to form the event horizon (orange curve). Therefore, our source becomes a black hole. Conversely, in the red region (critical value exceeds density), the time to form the event horizon is delayed relative to the time taken to form the singularity. Therefore, our source becomes a \textit{naked singularity}. We assume $l, G = 1$ for this plot.</b>
+            <b><font color = "#EF6D3D">Figure 1:</font>Conditions for forming black holes vs. naked singularities. Notice that in the green region (density exceeds critical value), the time to form a singularity (blue curve) exceeds the time it takes to form the event horizon (orange curve). Therefore, our source becomes a black hole. Conversely, in the red region (critical value exceeds density), the time to form the event horizon is delayed relative to the time taken to form the singularity. Therefore, our source becomes a \textit{naked singularity}. We assume $l, G = 1$ for this plot.</b>
+            <br>
             It remains to be verified whether these results are consistent with our mathematical approach. To do so, we cannot simply use Einstein's 
             field equations because these equations suggest that the energy-momentum tensor ${T^{\mu}}_{\nu}$ vanish in two dimensions. Instead, we must use the <i>Nordstrøm Theory of Gravity</i>. In this theory, the field equation 
             is <font color="#EF6D3D">[3]</font>: 
@@ -165,16 +166,17 @@
             <h3>What have we found?</h3>
             The first results we found were the initial conditions for pressure, density, velocity, and various derivatives of this quantities: 
             \begin{align}
-                \phi(0\, x) &= \left\{\begin{alignedat}{3}&\phi_{c} - \log\left(\frac{1}{2}\left(\alpha + 1 - (\alpha - 1)\cosh(\xi x)\right)\right)\, & \quad & \abs{x} \leq l \\ &\abs{\xi x} - \xi l + \phi_{c} + \log(1 + 1/\alpha)\, &\quad & \abs{x} > l.  \end{alignedat}\right. \\\\\\\\
+                \phi(0\, x) &= \left\{\begin{alignedat}{3}&\phi_{c} - \log\left(\frac{1}{2}\left(\alpha + 1 - (\alpha - 1)\cosh(\xi x)\right)\right)\, & \quad & \vert x\vert \leq l \\ &\vert \xi x\vert  - \xi l + \phi_{c} + \log(1 + 1/\alpha)\, &\quad & \vert x \vert > l.  \end{alignedat}\right. \\\\\\\\
                 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
                 \partial_{t}\phi(0\, x) &= 0\, \qquad \forall x. \\\\\\\\
                 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-                p(0\, x) &= \left\{\begin{alignedat}{3}&\frac{1}{2}\left(\alpha^{2} + 1 - (\alpha^{2} - 1)\cosh(\xi x)\right)\, & \qquad &\abs{x} \leq l \\ &0\, & \qquad & \abs{x} > l\end{alignedat}\right. \\\\\\\\
+                p(0\, x) &= \left\{\begin{alignedat}{3}&\frac{1}{2}\left(\alpha^{2} + 1 - (\alpha^{2} - 1)\cosh(\xi x)\right)\, & \qquad &\vert x\vert \leq l \\ &0\, & \qquad & \vert x\vert  > l\end{alignedat}\right. \\\\\\\\
                 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-                \rho(0\, x) &= \left\{\begin{alignedat}{3}&\frac{m}{2l}\, & \qquad & \abs{x} \leq l\, \\ &0\, &\qquad & \abs{x} > l. \end{alignedat}\right. \\\\\\\\
+                \rho(0\, x) &= \left\{\begin{alignedat}{3}&\frac{m}{2l}\, & \qquad & \vert x \vert  \leq l\, \\ &0\, &\qquad & \vert x \vert > l. \end{alignedat}\right. \\\\\\\\
                 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-                u^{\mu}(0\, x) &= \left\{\begin{alignedat}{3}&e^{-\phi(0\, x)}(1\, 0)\, &\qquad & \abs{x} \leq l \\ &\text{---} & \qquad & \abs{x} > l. \end{alignedat}\right\}
+                u^{\mu}(0\, x) &= \left\{\begin{alignedat}{3}&e^{-\phi(0\, x)}(1\, 0)\, &\qquad & \vert x \vert \leq l \\ &\text{---} & \qquad & \vert x \vert > l. \end{alignedat}\right\}
             \end{align}
+            Here, $\xi \equiv \left[4Gp(0, 0)\right]^{1/2}$. Furthermore, we found that the pressure at the center of the source ($p(0, 0) \equiv p_{c}$) satisfies the transcendental equation, $p_{c} = \tanh\left(\frac{1}{2}e^{2\phi}\xi l\right)\frac{m}{2l}$.
             
             <h4>References</h4>
             <ol type = "1">
