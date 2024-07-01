@@ -55,9 +55,9 @@
       <ul class="main-menu">
         <li><a href="#home">Home</a></li>
         <li><a href = "#gl">Gravitational Lensing</a></li>
-        <li><a href = "#qft">QFT</a></li>
         <li><a href = "#bh">Black Holes</a></li>
         <li><a href="#Links">Links/Publications</a></li>
+        <li><a href="#Coursework">Relevant Coursework</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>                 
     </header>
@@ -69,12 +69,12 @@
           <div id="home" class="content-region hide">
             <h2>Home</h2>
             <p>
-              <span style="margin-left:2em">Welcome</span> to my personal website! I am a junior at Rutgers University, New Brunswick, NJ majoring in astrophysics and mathematics. I am currently conducting research on gravitational lensing
-              (Department of Physics and Astronomy), and on the mathematical theory of black holes (Department of Mathematics). I completed an independent reading course on introductory mathematics of 
-              quantum field theory in the mathematics department. Please refer to the above tabs to read more about my work. <b>In the future, I aim to work on mathematical problems of black hole interiors/stability, 
-              general relativity, and quantum gravity models.</b> 
+              Welcome to my personal website! I am a senior at Rutgers University, New Brunswick, NJ majoring in astrophysics and mathematics. 
+                I am currently conducting research on gravitational lensing in the Department of Physics and Astronomy, and on the mathematical theory of gravitational collapse in (1 + 1) 
+                spacetime dimensions in the Department of Mathematics. Please refer to the above tabs to read more about my work. <b>In the future, I aim to work on mathematical problems of black holes, 
+                  general relativity, and quantum gravity models.</b> 
               <br> 
-              <span style="margin-left:2em">Outside</span> of research and coursework, I am a member of the Society of Physics Students (SPS; national and Rutgers chapters), the Rutgers Undergraduate Mathematics Association, Rutgers Astronomical Society, and the
+              Outside of research and coursework, I am a member of the Society of Physics Students (SPS; national and Rutgers chapters), the Rutgers Undergraduate Mathematics Association, Rutgers Astronomical Society, and the
               Rutgers Graduate-Undergraduate Seminar in Mathematical Physics. In SPS, I am a member of the computing cluster admin, helping finalize software installation, updates, and general maintenance on our custom-built
               supercomputer. 
             </p>
@@ -83,7 +83,7 @@
           <div id = "gl" class = "content-region hide">
             <h2>Gravitational Lensing Research</h2>
             <p>
-              <span style="margin-left:2em">I</span> am conducting research gravitational lensing research under Dr. Charles Keeton in the Department of Physics and Astronomy (May 2022 - Ongoing). 
+              I am conducting research gravitational lensing research under Dr. Charles Keeton in the Department of Physics and Astronomy (May 2022 - Ongoing). 
               In recent decades, gravitational lensing by galaxy clusters has become a powerful astrophysical tool. Due to their immense mass, 
               galaxy clusters form "cosmic telescopes," magnifying distant primordial galaxies [1]. These observations
               provide an opportunity to study the early universe. For instance, Furtak et al. [2] analyze the low-mass
@@ -91,7 +91,7 @@
               for high-redshift lensed galaxies. This function allows us to compare properties of the oldest galaxies with younger ones and constrain 
               crucial initial conditions for galaxy formation models. 
               <br>
-              <span style="margin-left:2em">Before</span> astronomers can use the observations, they must reconstruct the intrinsic sources by accounting for the distortions and magnifications 
+              Before astronomers can use the observations, they must reconstruct the intrinsic sources by accounting for the distortions and magnifications 
               induced by gravitational lensing. This step requires models of the cluster mass distribution, which involve numerous assumptions and parameters,
               each adding systematic errors. Therefore, we need to figure out the contribution of each parameter to the errors [3].
               One parameter of concern is the density fluctuation in cosmological large-scale structures (LSS). The LSS is the "cosmic web" connecting galaxy 
@@ -131,52 +131,46 @@
             </p>
           </div>
 
-          <div id="qft" class="content-region hide">
-            <h2>Mathematics of Quantum Field Theory</h2>
-            <p><span style="margin-left:2em">In</span> the fall semester, I participated in an independent reading course on the mathematics of quantum field theory with Dr. Filip Dul in the Department of Mathematics. Our goal was to broadly understand modern mathematical methods for quantum field theory, which combine elements
-of homological algebra/category theory, functional analysis, PDE, and geometry.</p>
-          </div>
-
           <div id="bh" class = "content-region hide">
-            <h2>Mathematical Theory of Black Holes</h2>
+            <h2>Mathematical Theory of Gravitational Collapse in (1 + 1)-Dimensions</h2>
+            During Summer 2024 and Fall 2024, I am working on the mathematical theory of gravitational collapse in (1 + 1)-dimensions under guidance by Lawrence Frolov in the Department of Mathematics. This project is part of 
+            a larger effort by a few members of the Rutgers Mathematical Physics group to study joint-evolution problems in two dimensions (time and space). Our work takes inspiration from the original Oppenheimer-Snyder 
+            model of gravitational collapse [1] (which was done in four dimensions), and from the work on gravitation and cosmology in two dimensions by Sikkema and Mann [2]. Our goal is to re-study these problems with more 
+            mathematical rigor to see if similar results can be obtained. 
+            <br>
+            More concretely, I am studying the dynamical evolution of a free uniform line density $\rho$. The questions we aim to answer by the end of our research
+            are: 
+              <ol type = "1">
+                <li>Will the uniform line density collapse down into a singularity?</li>
+                <li>If the line density collapses, what does the collapse look like? Will it be a simple contraction? Or, will there be additional effects?</li>
+                <li>What is the evolution of the line density after it has collapsed to a singularity (if it collases)? Will it remain a singularity?</li>
+              </ol>
+            <br>
+            The original work by Oppenheimer and Synder showed that the line density will contract to a black hole. Follow-up work by Sikkema and Mann showed that the matter density could either form a black hole or
+            a singularity, depending on the initial mass density (see below figure). It remains to be verified whether these results are consistent with our mathematical approach. To do so, we cannot simply use Einstein's 
+            field equations because these equations suggest that the energy-momentum tensor ${T^{\mu}}_{\nu}$ vanish in two dimensions. Instead, we must use the <i>Nordstrøm Theory of Gravity</i>. In this theory, the field equation 
+            is: 
+              $$R = 4Gg_{\alpha \beta}T^{\alpha \beta},$$
+            where the metric used is $g_{\alpha \beta} = e^{2\phi}\eta_{\alpha \beta}$ ($\phi$ is the standard gravitational potential, and $\eta_{\alpha \beta}$ is the flat metric). The metric signature used in our project is $(- +)$.
+            <h4>References</h4>
+            <ol type = "1">
+              <li>J. R. Oppenheimer and H. Snyder. “On Continued Gravitational Contraction”. In: Phys. Rev. 56 (5
+Sept. 1939), pp. 455–459. doi: 10.1103/PhysRev.56.455. url: https://link.aps.org/doi/10.
+1103/PhysRev.56.455</li>
+              <li>A. E. Sikkema and R. B. Mann. “Gravitation and cosmology in (1+1) dimensions”. In: Classical and
+Quantum Gravity 8.1 (Jan. 1991), pp. 219–235. doi: 10.1088/0264-9381/8/1/022</li>
+            </ol>
             <hr>
-            <h3>Weeks 1 & 2: Manifolds, tensors, and metric tensors</h3>
-            <p>
-            <span style="margin-left:2em">In</span> these two weeks, I began working through an introduction to differential geometry of manifolds and general relativity. For this portion of the independent study, I am using 
-              Dr. Harvey Reall's lectures notes on general relativity from Part III of the Cambridge Mathematical Tripos and Robert Wald's <em>General Relativity</em>. <span id = 'dots'>...</span> <span id = "more">
-                In these two weeks, I expanded on my knowledge of manifolds and tensors. In particular, I learned about <em>coordinate charts</em> (i.e., smooth bijections from open subsets in $\mathbb{R}^{n}$ onto open neighborhoods
-                on the manifold). It is possible that on global scales, spacetime does not have the same properties as $\mathbb{R}^{n}$, but does so "locally." A classic example of this is the surface of the 2-sphere $\mathbb{S}^{2}$. 
-                On small scales, the 2-sphere appears to be $\mathbb{R}^{2}$ (i.e., the flat Earth approximation). But on large scales, this approximation breaks (Q: what is the sum of the interior angles of a triangle connecting 
-                New York City, Paris, and Brasília?) How can we do calculus on such surfaces using our knowledge of calculus in Euclidean spaces? To aid us, we define a new mathematical object called "manifolds," which are diffeomorphic to $\mathbb{R}^{n}$. Hence, we can do calculus on manifolds by making connections to classical results/theorems
-                in Euclidean spaces.
-                <br>
-                I also learned about Einstein summation notation, basis vectors for $T_{p}(M), T_{p}^{\ast}(M)$, contravariant and covectors. Finally, I started reading about metric tensors, Lorentzian manifolds, the <em>Lorentz Transformation</em>,
-                and Christoffel symbols. 
-                <br>
-                <b>Reall <em>General Relativity</em> Chapters:</b> 1, 2.
-              </span>
-            </span></p>
-            <button style="background-color: #EF6D3D; padding: 10px 10px; border:none; font-size: 22px; color:white;" onclick="myFunction()" id="myBtn">Read more</button>
-
-            <hr>
-            
-            <h3>Weeks 3 & 4: Covariant Derivatives, Curvature</h3>
-            <p>
-            <span style="margin-left:2em">I</span> I continued working through Reall's lecture notes on general relativity (chapters 3 and 4)<span id = 'dots'>...</span> Coming soon...<span id = "more">
-                <br>
-                <b>Reall <em>General Relativity</em> Chapters:</b> 3, 4.
-              </span>
-            </span></p>
-            <button style="background-color: #EF6D3D; padding: 10px 10px; border:none; font-size: 22px; color:white;" onclick="myFunction()" id="myBtn">Read more</button>
-
+            <h2>Independent Study in General Relativity and Black Holes</h2>
+            In Spring 2024, I studied introductory general relativity and introductory mathematical theory of black holes with Dr. Maxime Van de Moortel through an independent study course. During the semester, I worked through
+            lecture notes on these topics written by Dr. Harvey Reall for Part III of the Cambridge Mathematical Tripos. I am currently working on organizing the notes I took during the semester, and will upload these notes when 
+            finished. (Estimated time to finish: September 2024)
           </div>
-
           <div id="Links" class="content-region hide">
             <h2>Links/Publications</h2>
             <h3>Links:</h3>
             <ol type = "1">
               <li><a href = "https://github.com/aniruddhamadhava/RU-Gravitational-Lensing">RU Lensing Repository</a></li>
-              <li><a href = "https://github.com/aniruddhamadhava/Mathematical_QFT">Mathematical Quantum Field Theory Repository <b>(Content coming soon...)</b></a></li>
               <li><a href = "https://www.overleaf.com/read/qcwdxgsgmncs#e3a53c">In-Depth Summary of Gravitational Lensing Project.</a></li>
             </ol>
             <h3>Publications/Posters:</h3>
@@ -185,6 +179,52 @@ of homological algebra/category theory, functional analysis, PDE, and geometry.<
               <li><a href = "https://docs.google.com/presentation/d/1NHAfd3nZUoQ97e4R-stvadA-mqmwnKOoLJYqaaKj4zk/edit?usp=sharing">Quantifying Systematic Errors in Cluster Lens Models due to Cosmological Large-Scale Structures</a></li>: Slide presentation at the Fall Research Symposium organized by the Rutgers Society of Physics Students (November 29, 2023)
               <li><a href ="https://github.com/aniruddhamadhava/RU-Gravitational-Lensing/blob/main/madhava_aniruddha_arestyposter%20(1).pdf">Computing Lensing Deflection Angle Maps for Simulated Large-Scale Structures</a></li>: Poster presentation at the annual Aresty Summer Science Research Symposium (August 4, 2022)
               <li><a href = "https://drive.google.com/file/d/1zo25sAurxqt9OHcTX5vNoph83DZoZjF5/view?usp=sharing"><b>A. Madhava</b>, Noether's Theorem, Hamiltonian Mechanics, and Homological Algebra, 2023</a></li>: Final paper for mathematical QFT research.
+            </ol>
+          </div>
+
+          <div id = "Coursework" class="content-region hide">
+            The following lists provide information about relevant coursework and awards. 
+            <h2>Astrophysics</h2>
+            <ol type = "1">
+              <li>Honors Physics I - III</li>
+              <li>Principles of Astrophysics I, II</li>
+              <li>Thermal Physics</li>
+              <li>Classical Mechanics I, II</li>
+              <li>Electromagnetism I, II</li>
+              <li>Intermediate Quantum Mechanics</li>
+              <li>Introduction to Cosmology</li>
+              <li>Research in Physics</li>
+              <li>Honors in Astronomy</li>
+              <li>Graduate Quantum Mechanics</li>
+              <li>Mathematical Physics</li>
+              <li>High-Energy Astrophysics and Radiative Processes</li>
+            </ol>
+            <hr>
+            <h2>Mathematics</h2>
+            <ol type = "1">
+              <li>Honors Calculus III-IV</li>
+              <li>Intro. to Mathematical Reasoning</li>
+              <li>Mathematical Analysis I</li>
+              <li>Elementary Partial Differential Equations</li>
+              <li>Introduction to Differential Geometry</li>
+              <li>Independent Study on Mathematics of Quantum Field Theory</li>
+              <li>Independent Study on General Relativity and Black Holes</li>
+              <li>Independent Study on PDEs and Wave Equations</li>
+              <li>Graduate Level Topics Course in Mathematical Physics (Einstein's Rel. Theory of Gravitation)</li>
+            </ol>
+            <br>
+            Outside of these coursework, I have also engaged in personal studies of advanced mathematical topics. For instance, I am currently working through H. Royden's <i>Real Analysis</i> (3e), Guillemin and Pollack's
+            <i>Differential Topology</i>, and Dummit and Foote's <i>Abstract Algebra</i>. 
+            <hr>
+            <h2>Awards</h2>
+            <ol type = "1">
+              <li><b>Hermann Y. Carr Scholarship (April 2024)</b>Awarded to three Rutgers physics majors who, in the judgment of the physics faculty, have demonstrated outstanding academic excellence. Awarded in conjunction by Rutgers School of Arts and Sciences as part of the SAS excellence Awards</li>
+              <li><b>$\Phi \Beta \Kappa (Phi Beta Kappa; April 2024)</b>Honor society membership.</li>
+              <li><b>Dean's List (Every Semester)</b></li>
+              <li><b>Rutgers College Scholarship (May 2023)</b>Awarded by the Rutgers School of Arts and Sciences as part of the SAS Excellence Awards</li>
+              <li><b>Robert L. Sells Scholarship (April 2023)</b>Awarded to three Rutgers physics majors who, in the judgment of the physics faculty, have demonstrated outstanding academic excellence. Awarded in conjunction by Rutgers School of Arts and Sciences as part of the SAS Excellence Awards.</li>
+              <li><b>RU Scarlet Scholarship (2021 - 2023)</b>Merit scholarship awarded by Rutgers University </li>
+              <li><b>NJ Seal of Biliteracy in French (2021)</b>Award given by the New Jersey Department of Education (NJDOE) in recognition of students who have studied and attained proficiency in at least one language in addition to English by high school graduation.</li>
             </ol>
           </div>
           
