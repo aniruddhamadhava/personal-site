@@ -85,19 +85,19 @@
             <p>
               I am conducting research gravitational lensing research under Dr. Charles Keeton in the Department of Physics and Astronomy (May 2022 - Ongoing). 
               In recent decades, gravitational lensing by galaxy clusters has become a powerful astrophysical tool. Due to their immense mass, 
-              galaxy clusters form "cosmic telescopes," magnifying distant primordial galaxies [1]. These observations
-              provide an opportunity to study the early universe. For instance, Furtak et al. [2] analyze the low-mass
+              galaxy clusters form "cosmic telescopes," magnifying distant primordial galaxies <font color = "#EF6D3D">[1]</font>. These observations
+              provide an opportunity to study the early universe. For instance, Furtak et al. <font color="#EF6D3D">[2]</font> analyze the low-mass
               end of the stellar mass function - the number density of galaxies binned by stellar mass - 
               for high-redshift lensed galaxies. This function allows us to compare properties of the oldest galaxies with younger ones and constrain 
               crucial initial conditions for galaxy formation models. 
               <br>
               Before astronomers can use the observations, they must reconstruct the intrinsic sources by accounting for the distortions and magnifications 
               induced by gravitational lensing. This step requires models of the cluster mass distribution, which involve numerous assumptions and parameters,
-              each adding systematic errors. Therefore, we need to figure out the contribution of each parameter to the errors [3].
+              each adding systematic errors. Therefore, we need to figure out the contribution of each parameter to the errors <font color = "#EF6D3D">[3]</font>.
               One parameter of concern is the density fluctuation in cosmological large-scale structures (LSS). The LSS is the "cosmic web" connecting galaxy 
               clusters. Incorporating the fluctuations due to LSS may produce non-uniform variations in the deflection of light rays that contribute 
               the most error. While previous work estimated the scale of LSS effects, the estimates are not detailed enough to be used for lens modeling 
-              [4,5]. Therefore, I used ray-tracing methods in conjunction with cosmological simulations 
+              <font color="#EF6D3D">[4,5]</font>. Therefore, I used ray-tracing methods in conjunction with cosmological simulations 
               to quantify LSS effects on lens models.
               <h4>Results</h4>
               Here are a few of my results: 
@@ -114,7 +114,7 @@
               <br>
               <p>
                 <span style="margin-left:2em">Since</span> my analysis suggests that we cannot neglect LSS deflection, I will continue this project by incorporating these results into cluster lens models. 
-                Raney et al. [6] present a framework to analyze systematic errors using Gaussian priors. I will use this framework in conjunction to incorporate my 
+                Raney et al. <font color="#EF6D3D">[6]</font> present a framework to analyze systematic errors using Gaussian priors. I will use this framework in conjunction to incorporate my 
                 results for LSS deflection into cluster lens models. Since the RMS values are more than an order of magnitude larger than current model residuals, 
                 we anticipate that the models will change, and I will examine how much including LSS deflections affects predictions for lensing magnifications that 
                 are used to draw conclusions about early galaxies.
@@ -135,7 +135,7 @@
             <h2>Mathematical Theory of Gravitational Collapse in (1 + 1)-Dimensions</h2>
             During Summer 2024 and Fall 2024, I am working on the mathematical theory of gravitational collapse in (1 + 1)-dimensions under guidance by Lawrence Frolov in the Department of Mathematics. This project is part of 
             a larger effort by a few members of the Rutgers Mathematical Physics group to study joint-evolution problems in two dimensions (time and space). Our work takes inspiration from the original Oppenheimer-Snyder 
-            model of gravitational collapse [1] (which was done in four dimensions), and from the work on gravitation and cosmology in two dimensions by Sikkema and Mann [2]. Our goal is to re-study these problems with more 
+            model of gravitational collapse <font color = "#EF6D3D">[1]</font> (which was done in four dimensions), and from the work on gravitation and cosmology in two dimensions by Sikkema and Mann <font color="#EF6D3D">[2]</font>. Our goal is to re-study these problems with more 
             mathematical rigor to see if similar results can be obtained. 
             <br>
             More concretely, I am studying the dynamical evolution of a free uniform line density $\rho$. The questions we aim to answer by the end of our research
@@ -147,18 +147,45 @@
               </ol>
             <br>
             The original work by Oppenheimer and Synder showed that the line density will contract to a black hole. Follow-up work by Sikkema and Mann showed that the matter density could either form a black hole or
-            a singularity, depending on the initial mass density (see below figure). It remains to be verified whether these results are consistent with our mathematical approach. To do so, we cannot simply use Einstein's 
+            a singularity, depending on the initial mass density (see Figure 1). 
+            <br>
+            <img src = "https://github.com/aniruddhamadhava/personal-site/blob/gh-pages/blackhole_sing%20(1).pdf", width = 700>
+            <br>
+            <b><font color = "#EF6D3D?">Figure 1:</font>Conditions for forming black holes vs. naked singularities. Notice that in the green region (density exceeds critical value), the time to form a singularity (blue curve) exceeds the time it takes to form the event horizon (orange curve). Therefore, our source becomes a black hole. Conversely, in the red region (critical value exceeds density), the time to form the event horizon is delayed relative to the time taken to form the singularity. Therefore, our source becomes a \textit{naked singularity}. We assume $l, G = 1$ for this plot.</b>
+            It remains to be verified whether these results are consistent with our mathematical approach. To do so, we cannot simply use Einstein's 
             field equations because these equations suggest that the energy-momentum tensor ${T^{\mu}}_{\nu}$ vanish in two dimensions. Instead, we must use the <i>Nordstrøm Theory of Gravity</i>. In this theory, the field equation 
-            is: 
+            is <font color="#EF6D3D">[3]</font>: 
               $$R = 4Gg_{\alpha \beta}T^{\alpha \beta},$$
             where the metric used is $g_{\alpha \beta} = e^{2\phi}\eta_{\alpha \beta}$ ($\phi$ is the standard gravitational potential, and $\eta_{\alpha \beta}$ is the flat metric). The metric signature used in our project is $(- +)$.
+            <br>
+            In our model, the source has non-zero pressure $p$ for $t \leq 0$. This pressure counteracts the gravitational force that wants to contract the source. An infinitesimal amount of time after $t = 0$, we assume
+            that the pressure drops to zero, allowing the mass to contract. For $t > 0$, the pressure remains zero, while the remaining parameters (i.e., density, velocity, potential) vary with position and time. This is 
+            the <em>Oppenheimer-Snyder model for gravitational collapse</em>. 
+            <br>
+            <h3>What have we found?</h3>
+            The first results we found were the initial conditions for pressure, density, velocity, and various derivatives of this quantities: 
+            \begin{align}
+                \phi(0\, x) &= \left\{\begin{alignedat}{3}&\phi_{c} - \log\left(\frac{1}{2}\left(\alpha + 1 - (\alpha - 1)\cosh(\xi x)\right)\right)\, & \quad & \abs{x} \leq l \\ &\abs{\xi x} - \xi l + \phi_{c} + \log(1 + 1/\alpha)\, &\quad & \abs{x} > l.  \end{alignedat}\right. \\\\\\\\
+                %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                \partial_{t}\phi(0\, x) &= 0\, \qquad \forall x. \\\\\\\\
+                %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                p(0\, x) &= \left\{\begin{alignedat}{3}&\frac{1}{2}\left(\alpha^{2} + 1 - (\alpha^{2} - 1)\cosh(\xi x)\right)\, & \qquad &\abs{x} \leq l \\ &0\, & \qquad & \abs{x} > l\end{alignedat}\right. \\\\\\\\
+                %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                \rho(0\, x) &= \left\{\begin{alignedat}{3}&\frac{m}{2l}\, & \qquad & \abs{x} \leq l\, \\ &0\, &\qquad & \abs{x} > l. \end{alignedat}\right. \\\\\\\\
+                %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                u^{\mu}(0\, x) &= \left\{\begin{alignedat}{3}&e^{-\phi(0\, x)}(1\, 0)\, &\qquad & \abs{x} \leq l \\ &\text{---} & \qquad & \abs{x} > l. \end{alignedat}\right\}
+            \end{align}
+            
             <h4>References</h4>
             <ol type = "1">
               <li>J. R. Oppenheimer and H. Snyder. “On Continued Gravitational Contraction”. In: Phys. Rev. 56 (5
-Sept. 1939), pp. 455–459. doi: 10.1103/PhysRev.56.455. url: https://link.aps.org/doi/10.
-1103/PhysRev.56.455</li>
+Sept. 1939), pp. 455–459. <a href = "https://link.aps.org/doi/10.
+1103/PhysRev.56.455">doi: 10.1103/PhysRev.56.455. url: https://link.aps.org/doi/10.
+1103/PhysRev.56.455</a></li>
               <li>A. E. Sikkema and R. B. Mann. “Gravitation and cosmology in (1+1) dimensions”. In: Classical and
-Quantum Gravity 8.1 (Jan. 1991), pp. 219–235. doi: 10.1088/0264-9381/8/1/022</li>
+Quantum Gravity 8.1 (Jan. 1991), pp. 219–235. doi: <a href = "https://iopscience.iop.org/article/10.1088/0264-9381/8/1/022">10.1088/0264-9381/8/1/022</a></li>
+              <li>A. D. Boozer. “General relativity in (1 + 1) dimensions”. In: European Journal of Physics 29.2 (Mar.
+2008), pp. 319–333. <a href = "https://iopscience.iop.org/article/10.1088/0143-0807/29/2/013">doi: 10.1088/0143-0807/29/2/013</a></li>
             </ol>
             <hr>
             <h2>Independent Study in General Relativity and Black Holes</h2>
