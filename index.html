@@ -169,21 +169,21 @@
             <h3>What have we found?</h3>
             The first results we found were the initial conditions for pressure, density, velocity, and various derivatives of this quantities: 
             \begin{align}
-                \phi(0\, x) &= \left\{\begin{alignedat}{3}&\phi_{c} - \log\left(\frac{1}{2}\left(\alpha + 1 - (\alpha - 1)\cosh(\xi x)\right)\right)\, & \quad & \vert x\vert \leq l \\ &\vert \xi x\vert  - \xi l + \phi_{c} + \log(1 + 1/\alpha)\, &\quad & \vert x \vert > l.  \end{alignedat}\right. \\\\\\\\
-                \partial_{t}\phi(0\, x) &= 0\, \qquad \forall x. \\\\\\\\
-                p(0\, x) &= \left\{\begin{alignedat}{3}&\frac{1}{2}\left(\alpha^{2} + 1 - (\alpha^{2} - 1)\cosh(\xi x)\right)\, & \qquad &\vert x\vert \leq l \\ &0\, & \qquad & \vert x\vert  > l\end{alignedat}\right. \\\\\\\\
-                \rho(0\, x) &= \left\{\begin{alignedat}{3}&\frac{m}{2l}\, & \qquad & \vert x \vert  \leq l\, \\ &0\, &\qquad & \vert x \vert > l. \end{alignedat}\right. \\\\\\\\
-                u^{\mu}(0\, x) &= \left\{\begin{alignedat}{3}&e^{-\phi(0\, x)}(1\, 0)\, &\qquad & \vert x \vert \leq l \\ &\text{---} & \qquad & \vert x \vert > l. \end{alignedat}\right\}
+                \phi(0, x) &= \left\{\begin{alignedat}{3}&\phi_{c} - \log\left(\frac{1}{2}\left(\alpha + 1 - (\alpha - 1)\cosh(\xi x)\right)\right), & \quad & \vert x\vert \leq l \\ &\vert \xi x\vert  - \xi l + \phi_{c} + \log(1 + 1/\alpha), &\quad & \vert x \vert > l.  \end{alignedat}\right. \\\\\\\\
+                \partial_{t}\phi(0, x) &= 0, \qquad \forall x. \\\\\\\\
+                p(0, x) &= \left\{\begin{alignedat}{3}&\frac{1}{2}\left(\alpha^{2} + 1 - (\alpha^{2} - 1)\cosh(\xi x)\right), & \qquad &\vert x\vert \leq l \\ &0, & \qquad & \vert x\vert  > l\end{alignedat}\right. \\\\\\\\
+                \rho(0, x) &= \left\{\begin{alignedat}{3}&\frac{m}{2l}, & \qquad & \vert x \vert  \leq l, \\ &0, &\qquad & \vert x \vert > l. \end{alignedat}\right. \\\\\\\\
+                u^{\mu}(0, x) &= \left\{\begin{alignedat}{3}&e^{-\phi(0, x)}(1, 0), &\qquad & \vert x \vert \leq l \\ &\text{---} & \qquad & \vert x \vert > l. \end{alignedat}\right\}
             \end{align}
             Here, $\xi \equiv \left[4Gp(0, 0)\right]^{1/2}$. Furthermore, we found that the pressure at the center of the source ($p(0, 0) \equiv p_{c}$) satisfies the transcendental equation, $\xi^{2} = 4G\tanh\left(\frac{1}{2}e^{2\phi}\xi l\right)\frac{m}{2l}$.
            <br>
            The following four plots provide a visual description of the initial conditions: 
            <div class="row", align = "center">
               <div class="column">
-                <img src="https://github.com/aniruddhamadhava/personal-site/blob/dfbc3b44980d393c5bfe68150217ab18f74cc915/images/phiox.png?raw=true", width = 300>
+                <img src="https://github.com/aniruddhamadhava/personal-site/blob/dfbc3b44980d393c5bfe68150217ab18f74cc915/images/phiox.png?raw=true", width = 375>
               </div>
               <div class="column">
-                <img src="https://github.com/aniruddhamadhava/personal-site/blob/dfbc3b44980d393c5bfe68150217ab18f74cc915/images/partialphiox.png?raw=true", width = 300>
+                <img src="https://github.com/aniruddhamadhava/personal-site/blob/dfbc3b44980d393c5bfe68150217ab18f74cc915/images/partialphiox.png?raw=true", width = 375>
               </div>
            </div>
            <b><font color="#EF6D3D">Figure 2:</font></b> [Left] Plot of $\phi(0, x)$ for different $l$ (green: $l = 1$; orange: $l = 2$; blue: $l = 3$). The vertical dashed lines indicate the surfaces of the sources. [Right] Plot of $\partial_{x}\phi\vert_{t = 0}$ for different $l$ (same color scheme as in the left panel). The surface is clearly visible at the cusps of the curves.
