@@ -103,7 +103,15 @@
           </div>
 
           <div id = "gl" class = "content-region hide">
-            <p id="blink">Our paper has been submitted for peer review at <em>The Astrophysical Journal!</em></p>
+            <p id="blink">Our paper has been submitted for peer review at <em>The Astrophysical Journal!</em></p><script type="text/javascript">
+        let blink =
+            document.getElementById('blink');
+
+        setInterval(function () {
+            blink.style.opacity =
+                (blink.style.opacity == 0 ? 1 : 0);
+        }, 1000); 
+    </script>
             <h2>Gravitational Lensing Research</h2>
             <p>
               I am conducting research gravitational lensing research under Dr. Charles Keeton in the Department of Physics and Astronomy (May 2022 - Ongoing). 
