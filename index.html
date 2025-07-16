@@ -1,8 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <!-- Page setup -->
-    <meta charset="utf-8">
+    <meta charset = "utf-8">
     <title>Aniruddha Madhava</title>
     <meta name="About Me" content="Junior majoring in astrophysics and mathematics at Rutgers University - New Brunswick, NJ.">
     <meta name="author" content="Information about the author here">
@@ -11,325 +10,100 @@
     <meta http-equiv='expires' content='0'> 
     <meta http-equiv='pragma' content='no-cache'>
     <link rel="icon" type="image/png" href="favicon.ico">
-  
-    <!-- Stylesheets -->
-    <!-- Reset default styles and add support for google fonts -->
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
     <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
-   
-    <!-- Custom styles -->
-    <link href="style.css" rel="stylesheet" type="text/css" />
-
-    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>    
     <script type="text/javascript" id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
-<script>
-  MathJax = {
-    tex: {
-      inlineMath: [['$', '$']]
-    }
-  };
-</script>
-<style>
-  .tab {
-    display: inline-block;
-    margin-left: 4em;
-}
-#more {display: none;}
-</style>
-<style>
-        #blink {
-            font-size: 20px;
-            font-weight: bold;
-            font-family: sans-serif;
-            background-color: yellow;
-            color: red;
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$']]
         }
-</style>
-
-
-    <!-- Want to add Bootstrap? -->
-    <!-- Visit: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
-    
+      };
+    </script>
+    <style>
+      .tab {
+        display: inline-block;
+        margin-left: 4em;
+    }
+    #more {display: none;}
+    </style>
+    <style>
+            #blink {
+                font-size: 20px;
+                font-weight: bold;
+                font-family: sans-serif;
+                background-color: yellow;
+                color: red;
+            }
+    </style>
   </head>
-  
-  <body>
 
+
+
+  <body>
     <header id="header">
       <h1>Aniruddha Madhava</h1>
-      
-      <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
       <ul class="main-menu">
         <li><a href="#home">Home</a></li>
-        <li><a href = "#gl">Gravitational Lensing</a></li>
-        <li><a href = "#bh">Black Holes</a></li>
-        <li><a href="#Links">Links/Publications</a></li>
-        <li><a href="#Coursework">Relevant Coursework</a></li>
+        <li><a href = "#re">Research</a></li>
+        <li><a href = "#pub">Publications</a></li>
+        <li><a href="#te">Teaching</a></li>
+        <li><a href="#Coursework">Coursework and Awards</a></li>
+        <li><a href="#ur">Undergraduate Research</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>                 
     </header>
-   
+
     <div id="container">
       <div class="inner">
-        <div id="content"> 
-          
-          <div id="home" class="content-region hide">
-            <p id="blink">See "Gravitational Lensing" tab for important updates!</p><script type="text/javascript">
+
+        <div id="home" class="content-region hide">
+            <p id="blink">Attention! This site is currently under construction and may not be complete.</p><script type="text/javascript">
         let blink =
             document.getElementById('blink');
-
         setInterval(function () {
             blink.style.opacity =
                 (blink.style.opacity == 0 ? 1 : 0);
-        }, 1000); 
+        }, 100000); 
             </script>
-            <h2>Home</h2>
-            <p>
-              Welcome to my personal website! I am a senior at Rutgers University, New Brunswick, NJ majoring in astrophysics and mathematics. From August, I will be joining Stony Brook's mathematics program as a PhD student, with the goal of specializing in analysis and partial differential equations (PDEs).
-                I am currently conducting research on gravitational lensing in the Department of Physics and Astronomy, and on the mathematical theory of gravitational collapse in (1 + 1) 
-                spacetime dimensions in the Department of Mathematics. Please refer to the above tabs to read more about my work. <b>In the future, I aim to work on mathematical problems of black holes, 
-                  general relativity, and PDEs.</b> 
-              <br> 
-              Outside of research and coursework, I am a member of the Society of Physics Students (SPS; national and Rutgers chapters), the Rutgers Undergraduate Mathematics Association, Rutgers Astronomical Society, and the
-              Rutgers Graduate-Undergraduate Seminar in Mathematical Physics. In SPS, I am a member of the computing cluster admin, helping finalize software installation, updates, and general maintenance on our custom-built
-              supercomputer. 
-            </p>
-            <br>
-            <div align = "center">
-              <img src="https://github.com/aniruddhamadhava/personal-site/blob/f7d59b5c106d7338126d0e61dca544220a467b3f/images/20240407_203326.jpg?raw=true", width = 800, height = 200>
-            </div>
-          </div>
-
-          <div id = "gl" class = "content-region hide">
-            <p id="blink">Our paper has been accepted for publication by <em>The Astrophysical Journal!</em></p><script type="text/javascript">
-        let blink =
-            document.getElementById('blink');
-
-        setInterval(function () {
-            blink.style.opacity =
-                (blink.style.opacity == 0 ? 1 : 0);
-        }, 1000); 
-    </script>
-            <h2>Gravitational Lensing Research</h2>
-            <p>
-              I am conducting research gravitational lensing research under Dr. Charles Keeton in the Department of Physics and Astronomy (May 2022 - Ongoing). 
-              In recent decades, gravitational lensing by galaxy clusters has become a powerful astrophysical tool. Due to their immense mass, 
-              galaxy clusters form "cosmic telescopes," magnifying distant primordial galaxies <font color = "#EF6D3D">[1]</font>. These observations
-              provide an opportunity to study the early universe. For instance, Furtak et al. <font color="#EF6D3D">[2]</font> analyze the low-mass
-              end of the stellar mass function - the number density of galaxies binned by stellar mass - 
-              for high-redshift lensed galaxies. This function allows us to compare properties of the oldest galaxies with younger ones and constrain 
-              crucial initial conditions for galaxy formation models. 
-              <br>
-              Before astronomers can use the observations, they must reconstruct the intrinsic sources by accounting for the distortions and magnifications 
-              induced by gravitational lensing. This step requires models of the cluster mass distribution, which involve numerous assumptions and parameters,
-              each adding systematic errors. Therefore, we need to figure out the contribution of each parameter to the errors <font color = "#EF6D3D">[3]</font>.
-              One parameter of concern is the density fluctuation in cosmological large-scale structures (LSS). The LSS is the "cosmic web" connecting galaxy 
-              clusters. Incorporating the fluctuations due to LSS may produce non-uniform variations in the deflection of light rays that contribute 
-              the most error. While previous work estimated the scale of LSS effects, the estimates are not detailed enough to be used for lens modeling 
-              <font color="#EF6D3D">[4,5]</font>. Therefore, I used ray-tracing methods in conjunction with cosmological simulations 
-              to quantify LSS effects on lens models.
-              <h4>Results</h4>
-              Here are a few of my results: 
-              <br>
-              <div align="center">
-              <img src = "https://github.com/aniruddhamadhava/personal-site/blob/gh-pages/A2744_defstats_fitshear%20(1).png?raw=true", width = 400>
-              </div>
-              <br>
-              <b><font color = "#EF6D3D">Figure 1:</font></b> Deflection statistics for the Abell 2744 images. Average standard deviation in differential deflections due to LSS ($\sim 10$") is large relative
-              to current residuals between data and lens models ($\sim 1$"). This suggests that LSS effects are not negligible in lens models.
-
-              <br>
-              <div align="center">
-              <img src = "https://github.com/aniruddhamadhava/personal-site/blob/gh-pages/M0416_defstats_fitshear%20(1).png?raw=true", width = 400>
-              </div>
-              <br>
-              <b><font color = "#EF6D3D">Figure 2:</font></b> Same plot as in Figure 1, but with MACS 0416 images. We draw the same conclusions as in Figure 1. 
-              <br>
-              <p>
-                <span style="margin-left:2em">Since</span> my analysis suggests that we cannot neglect LSS deflection, I will continue this project by incorporating these results into cluster lens models. 
-                Raney et al. <font color="#EF6D3D">[6]</font> present a framework to analyze systematic errors using Gaussian priors. I will use this framework in conjunction to incorporate my 
-                results for LSS deflection into cluster lens models. Since the RMS values are more than an order of magnitude larger than current model residuals, 
-                we anticipate that the models will change, and I will examine how much including LSS deflections affects predictions for lensing magnifications that 
-                are used to draw conclusions about early galaxies.
-              </p>
-              <h4>References</h4>
-              <ol type = "1">
-                <li>Kikuchihara, S., Ouchi, M., Ono, Y., et al. 2020, ApJ, 893, 60, <a href="https://ui.adsabs.harvard.edu/link_gateway/2020ApJ...893...60K/doi:10.3847/1538-4357/ab7dbe">DOI:10.3847/1538-4357/ab7dbe</a>.</li>
-                <li>Furtak, L. J., Atek, H., Lehnert, M. D., Chevallard, J., & Charlot, S. 2020, MNRAS, 501, 1568, <a href ="https://ui.adsabs.harvard.edu/link_gateway/2021MNRAS.501.1568F/doi:10.1093/mnras/staa3760">DOI:10.1093/mnras/staa3760</a></li>
-                <li>Raney, C. A., Keeton, C. R., Brennan, S., & Fan, H. 2020, MNRAS, 494, 4771, <a href = "https://ui.adsabs.harvard.edu/link_gateway/2020MNRAS.494.4771R/doi:10.1093/mnras/staa921">DOI:10.1093/mnras/staa921</a></li>
-                <li>Bar-Kana, R., 1996, ApJ, 468, 17, <a href = "https://ui.adsabs.harvard.edu/link_gateway/1996ApJ...468...17B/doi:10.1086/177666">DOI:10.1086/177666</a></li>
-                <li>Host, O. 2012, MNRAS, 420, L18, <a href = "https://ui.adsabs.harvard.edu/abs/2012MNRAS.420L..18H">DOI:10.1111/j.1745-3933.2011.01184.x</a></li>
-                <li>Raney, C. A., Keeton, C. R., & Zimmerman D. T. 2021, MNRAS, 508, 5587, <a href = "https://ui.adsabs.harvard.edu/abs/2021MNRAS.508.5587R/abstract">DOI:10.1093/mnras/stab2857</a></li>
-              </ol>
-            </p>
-          </div>
-
-          <div id="bh" class = "content-region hide">
-            <h2>Mathematical Theory of Gravitational Collapse in (1 + 1)-Dimensions</h2>
-            During Summer 2024 and Fall 2024, I am working on the mathematical theory of gravitational collapse in (1 + 1)-dimensions under guidance by Lawrence Frolov in the Department of Mathematics. This project is part of 
-            a larger effort by a few members of the Rutgers Mathematical Physics group to study joint-evolution problems in two dimensions (time and space). Our work takes inspiration from the original Oppenheimer-Snyder 
-            model of gravitational collapse <font color = "#EF6D3D">[1]</font> (which was done in four dimensions), and from the work on gravitation and cosmology in two dimensions by Sikkema and Mann <font color="#EF6D3D">[2]</font>. Our goal is to re-study these problems with more 
-            mathematical rigor to see if similar results can be obtained. 
-            <br>
-            More concretely, I am studying the dynamical evolution of a free uniform line density $\rho$. The questions we aim to answer by the end of our research
-            are: 
-              <ol type = "1">
-                <li>Will the uniform line density collapse down into a singularity?</li>
-                <li>If the line density collapses, what does the collapse look like? Will it be a simple contraction? Or, will there be additional effects?</li>
-                <li>What is the evolution of the line density after it has collapsed to a singularity (if it collases)? Will it remain a singularity?</li>
-              </ol>
-            <br>
-            The original work by Oppenheimer and Synder showed that the line density will contract to a black hole. Follow-up work by Sikkema and Mann showed that the matter density could either form a black hole or
-            a singularity, depending on the initial mass density (see Figure 1). 
-            <br>
-            <div align = "center">
-              <img src = "https://github.com/aniruddhamadhava/personal-site/blob/f48280b831a5a958c7c02983a20e4eaab900af18/images/blackhole_sing%20(1)-1.png?raw=true", width = 400>
-            </div>
-            <br>
-            <b><font color = "#EF6D3D">Figure 1:</font></b>Conditions for forming black holes vs. naked singularities. Notice that in the green region (density exceeds critical value), the time to form a singularity (blue curve) exceeds the time it takes to form the event horizon (orange curve). Therefore, our source becomes a black hole. Conversely, in the red region (critical value exceeds density), the time to form the event horizon is delayed relative to the time taken to form the singularity. Therefore, our source becomes a <i>naked singularity</i>. We assume $l, G = 1$ for this plot.
-            <br>
-            It remains to be verified whether these results are consistent with our mathematical approach. To do so, we cannot simply use Einstein's 
-            field equations because these equations suggest that the energy-momentum tensor ${T^{\mu}}_{\nu}$ vanish in two dimensions. Instead, we must use the <i>Nordstrøm Theory of Gravity</i>. In this theory, the field equation 
-            is <font color="#EF6D3D">[3]</font>: 
-              $$R = 4Gg_{\alpha \beta}T^{\alpha \beta},$$
-            where the metric used is $g_{\alpha \beta} = e^{2\phi}\eta_{\alpha \beta}$ ($\phi$ is the standard gravitational potential, and $\eta_{\alpha \beta}$ is the flat metric). The metric signature used in our project is $(- +)$.
-            <br>
-            In our model, the source has non-zero pressure $p$ for $t \leq 0$. This pressure counteracts the gravitational force that wants to contract the source. An infinitesimal amount of time after $t = 0$, we assume
-            that the pressure drops to zero, allowing the mass to contract. For $t > 0$, the pressure remains zero, while the remaining parameters (i.e., density, velocity, potential) vary with position and time. This is 
-            the <em>Oppenheimer-Snyder model for gravitational collapse</em>. 
-            <br>
-            <br>
-            <h3>What have we found?</h3>
-            The first results we found were the initial conditions for pressure, density, velocity, and various derivatives of this quantities: 
-            \begin{align}
-                \phi(0, x) &= \left\{\begin{alignedat}{3}&\phi_{c} - \log\left(\frac{1}{2}\left(\alpha + 1 - (\alpha - 1)\cosh(\xi x)\right)\right), & \quad & \vert x\vert \leq l \\ &\vert \xi x\vert  - \xi l + \phi_{c} + \log(1 + 1/\alpha), &\quad & \vert x \vert > l.  \end{alignedat}\right. \\\\\\\\
-                \partial_{t}\phi(0, x) &= 0, \qquad \forall x. \\\\\\\\
-                p(0, x) &= \left\{\begin{alignedat}{3}&\frac{1}{2}\left(\alpha^{2} + 1 - (\alpha^{2} - 1)\cosh(\xi x)\right), & \qquad &\vert x\vert \leq l \\ &0, & \qquad & \vert x\vert  > l\end{alignedat}\right. \\\\\\\\
-                \rho(0, x) &= \left\{\begin{alignedat}{3}&\frac{m}{2l}, & \qquad & \vert x \vert  \leq l, \\ &0, &\qquad & \vert x \vert > l. \end{alignedat}\right. \\\\\\\\
-                u^{\mu}(0, x) &= \left\{\begin{alignedat}{3}&e^{-\phi(0, x)}(1, 0), &\qquad & \vert x \vert \leq l \\ &\text{---} & \qquad & \vert x \vert > l. \end{alignedat}\right\}
-            \end{align}
-            Here, $\xi \equiv \left[4Gp(0, 0)\right]^{1/2}$. Furthermore, we found that the pressure at the center of the source ($p(0, 0) \equiv p_{c}$) satisfies the transcendental equation, $\xi^{2} = 4G\tanh\left(\frac{1}{2}e^{2\phi}\xi l\right)\frac{m}{2l}$.
-           <br>
-           The following four plots provide a visual description of the initial conditions: 
-           <div class="row", align = "center">
-              <div class="column">
-                <img src="https://github.com/aniruddhamadhava/personal-site/blob/dfbc3b44980d393c5bfe68150217ab18f74cc915/images/phiox.png?raw=true", width = 375>
-              </div>
-              <div class="column">
-                <img src="https://github.com/aniruddhamadhava/personal-site/blob/dfbc3b44980d393c5bfe68150217ab18f74cc915/images/partialphiox.png?raw=true", width = 375>
-              </div>
-           </div>
-           <b><font color="#EF6D3D">Figure 2:</font></b> [Left] Plot of $\phi(0, x)$ for different $l$ (green: $l = 1$; orange: $l = 2$; blue: $l = 3$). The vertical dashed lines indicate the surfaces of the sources. [Right] Plot of $\partial_{x}\phi\vert_{t = 0}$ for different $l$ (same color scheme as in the left panel). The surface is clearly visible at the cusps of the curves.
-           <br>
-            <div class="row", align="center">
-              <div class = "column">
-                <img src="https://github.com/aniruddhamadhava/personal-site/blob/c443c348a9d69ec9728ae98f7e13bb5d6982c2c5/images/pox.png?raw=true", width=375>
-              </div>
-              <div class="column">
-                <img src="https://github.com/aniruddhamadhava/personal-site/blob/c443c348a9d69ec9728ae98f7e13bb5d6982c2c5/images/partialpox.png?raw=true", width=375>
-              </div>
-            </div>
-            <b><font color="#EF6D3D">Figure 3:</font></b> [Left] Plot of pressure as a function of position for different $l$, using the same color scheme as in <font color="#EF6D3D">Figure 2</font>. [Right] Plot of $\partial_{x}p\vert_{t = 0}$ for different $l$.
-            <h4>References</h4>
-            <ol type = "1">
-              <li>J. R. Oppenheimer and H. Snyder. “On Continued Gravitational Contraction”. In: Phys. Rev. 56 (5
-Sept. 1939), pp. 455–459. <a href = "https://link.aps.org/doi/10.
-1103/PhysRev.56.455">doi: 10.1103/PhysRev.56.455. url: https://link.aps.org/doi/10.
-1103/PhysRev.56.455</a></li>
-              <li>A. E. Sikkema and R. B. Mann. “Gravitation and cosmology in (1+1) dimensions”. In: Classical and
-Quantum Gravity 8.1 (Jan. 1991), pp. 219–235. doi: <a href = "https://iopscience.iop.org/article/10.1088/0264-9381/8/1/022">10.1088/0264-9381/8/1/022</a></li>
-              <li>A. D. Boozer. “General relativity in (1 + 1) dimensions”. In: European Journal of Physics 29.2 (Mar.
-2008), pp. 319–333. <a href = "https://iopscience.iop.org/article/10.1088/0143-0807/29/2/013">doi: 10.1088/0143-0807/29/2/013</a></li>
-            </ol>
-            <hr>
-            <h2>Independent Study in General Relativity and Black Holes</h2>
-            In Spring 2024, I studied introductory general relativity and introductory mathematical theory of black holes with Dr. Maxime Van de Moortel through an independent study course. During the semester, I worked through
-            lecture notes on these topics written by Dr. Harvey Reall for Part III of the Cambridge Mathematical Tripos. I am currently working on organizing the notes I took during the semester, and will upload these notes when 
-            finished. (Estimated time to finish: September 2024)
-          </div>
-          <div id="Links" class="content-region hide">
-            <h2>Links/Publications</h2>
-            <h3>Links:</h3>
-            <ol type = "1">
-              <li><a href = "https://github.com/aniruddhamadhava/RU-Gravitational-Lensing">RU Lensing Repository</a></li>
-              <li><a href = "https://www.overleaf.com/read/qcwdxgsgmncs#e3a53c">In-Depth Summary of Gravitational Lensing Project.</a></li>
-            </ol>
-            <h3>Publications/Posters:</h3>
-            <ol type = "1">
-              <li><b>A. Madhava</b>, C. Keeton, "A New Framework for Understanding Systematic Errors in Cluster Lens Modeling. III. Deflection from Large-Scale Structure
-”, 2024 <b>(accepted for publication)</b></li>
-              <li><a href = "https://docs.google.com/presentation/d/1NHAfd3nZUoQ97e4R-stvadA-mqmwnKOoLJYqaaKj4zk/edit?usp=sharing">Quantifying Systematic Errors in Cluster Lens Models due to Cosmological Large-Scale Structures</a></li>: Slide presentation at the Fall Research Symposium organized by the Rutgers Society of Physics Students (November 29, 2023)
-              <li><a href ="https://github.com/aniruddhamadhava/RU-Gravitational-Lensing/blob/main/madhava_aniruddha_arestyposter%20(1).pdf">Computing Lensing Deflection Angle Maps for Simulated Large-Scale Structures</a></li>: Poster presentation at the annual Aresty Summer Science Research Symposium (August 4, 2022)
-              <li><a href = "https://drive.google.com/file/d/1zo25sAurxqt9OHcTX5vNoph83DZoZjF5/view?usp=sharing"><b>A. Madhava</b>, Noether's Theorem, Hamiltonian Mechanics, and Homological Algebra, 2023</a></li>: Final paper for mathematical QFT research.
-            </ol>
-          </div>
-
-          <div id = "Coursework" class="content-region hide">
-            The following lists provide information about relevant coursework and awards. 
-            <h2>Astrophysics</h2>
-            <ol type = "1">
-              <li>Honors Physics I - III</li>
-              <li>Principles of Astrophysics I, II</li>
-              <li>Thermal Physics</li>
-              <li>Classical Mechanics I, II</li>
-              <li>Electromagnetism I, II</li>
-              <li>Intermediate Quantum Mechanics</li>
-              <li>Introduction to Cosmology</li>
-              <li>Research in Physics</li>
-              <li>Honors in Astronomy</li>
-              <li>Graduate Quantum Mechanics</li>
-              <li>Mathematical Physics</li>
-              <li>High-Energy Astrophysics and Radiative Processes</li>
-            </ol>
-            <hr>
-            <h2>Mathematics</h2>
-            <ol type = "1">
-              <li>Honors Calculus III-IV</li>
-              <li>Intro. to Mathematical Reasoning</li>
-              <li>Mathematical Analysis I</li>
-              <li>Elementary Partial Differential Equations</li>
-              <li>Introduction to Differential Geometry</li>
-              <li>Independent Study on Mathematics of Quantum Field Theory</li>
-              <li>Independent Study on General Relativity and Black Holes</li>
-              <li>Independent Study on PDEs and Wave Equations</li>
-              <li>Graduate Level Topics Course in Mathematical Physics (Einstein's Rel. Theory of Gravitation)</li>
-            </ol>
-            <br>
-            Outside of these coursework, I have also engaged in personal studies of advanced mathematical topics. For instance, I am currently working through H. Royden's <i>Real Analysis</i> (3e), Guillemin and Pollack's
-            <i>Differential Topology</i>, and Dummit and Foote's <i>Abstract Algebra</i>. 
-            <hr>
-            <h2>Awards</h2>
-            <ol type = "1">
-              <li><b>$\Sigma Pi Sigma</b> National Physics Honor Society</li> Undergraduate candidates must be in the upper one-third of their class in general scholarship to meet the minimum standard that chapters may use. A higher minimum average is often established for physics and astronomy courses. 
-              <li><b>Hermann Y. Carr Scholarship (April 2024)</b> Awarded to three Rutgers physics majors who, in the judgment of the physics faculty, have demonstrated outstanding academic excellence. Awarded in conjunction by Rutgers School of Arts and Sciences as part of the SAS excellence Awards</li>
-              <li><b>$\Phi$BK (Phi Beta Kappa; April 2024)</b> Honor society membership.</li>
-              <li><b>Dean's List (Every Semester)</b></li>
-              <li><b>Rutgers College Scholarship (May 2023)</b> Awarded by the Rutgers School of Arts and Sciences as part of the SAS Excellence Awards</li>
-              <li><b>Robert L. Sells Scholarship (April 2023)</b> Awarded to three Rutgers physics majors who, in the judgment of the physics faculty, have demonstrated outstanding academic excellence. Awarded in conjunction by Rutgers School of Arts and Sciences as part of the SAS Excellence Awards.</li>
-              <li><b>RU Scarlet Scholarship (2021 - 2023)</b> Merit scholarship awarded by Rutgers University </li>
-              <li><b>NJ Seal of Biliteracy in French (2021)</b> Award given by the New Jersey Department of Education (NJDOE) in recognition of students who have studied and attained proficiency in at least one language in addition to English by high school graduation.</li>
-            </ol>
-          </div>
-          
-          <div id="contact" class="content-region hide">
-            <h2>Contact</h2>
-            <p>
-             To contact me, please fill out the following survey. Thank you for your interest! 
-            </p>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe2DA3O-4VuPmi64YV_mDqqOh9CR6g_1Lmj4FcDeKSByrdxyg/viewform?embedded=true" width="640" height="617" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-          </div>
         
+        <div id="content">
+             <p>Welcome to my website! I am a first-year graduate student in the mathematics department at Stony Brook University, New York. My primary areas of research are hyperbolic partial differential equations
+                and mathematical physics. Please click on the above links to learn more about my work and how to contact me. Thank you!
+             </p>
+             <div align = "center">
+                 <img src="https://github.com/aniruddhamadhava/personal-site/blob/f7d59b5c106d7338126d0e61dca544220a467b3f/images/20240407_203326.jpg?raw=true", width = 800, height = 200>
+             </div>
+        </div>
+      </div>
+
+      <div id = "re" class = "content-region hide">
+        <p>This site is under construction. Please check back again later.</p>
+      </div>
+
+      <div id = "pub">
+        <h3>Publications:</h3>
+           <ol type = "1">
+             <li><b>Madhava A.</b>, & Keeton C.R. (2024). A New Framework for Understanding Systematic Errors in Cluster Lens Modelling. III. Deflection from Large-Scale Structure, apj, 975(2), e287.
+                 <a href="https://doi.org/10.3847/1538-4357/ad7eb6">https://doi.org/10.3847/1538-4357/ad7eb6</a>
+             </li>
+           </ol>
+        <h3>Talks:</h3>
+           <ol type = "1">
+             <li>When Mathematics meets Astrophysics: Analyzing the Number of Solutions to the Gravitational Lens Equation. Department of Physics and Astronomy, Rutgers University, NJ, March 2025</li>
+             <li>Quantifying Systematic Errors in Cluster Lens Models due to Cosmological Large-Scale Structures. Department of Physics and Astronomy, Rutgers University, NJ, November 2023</li>
+             <li>The Isoperimetric Inequality, Calculus of Variations, and Lagrangian Mechanics. Department of Mathematics, Rutgers University, NJ, April 2023</li>
+           </ol>
+        <h3>Posters:</h3>
+           <ol type = "1">
+             
+           </ol>
+        <h3>Papers:</h3>
       </div>
     </div>
-    </div>
-    <footer>  
-      Last edited: July 2024
-    </footer>
-    
-    <!-- Load additional JS scripts here -->
-    <script type="text/javascript" src="script.js"></script>
-    
   </body>
 </html>
